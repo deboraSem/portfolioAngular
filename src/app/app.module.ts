@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './componentes/header/header.component';
 import { SeccionesComponent } from './componentes/secciones/secciones.component';
 import { FooterComponent } from './componentes/footer/footer.component';
-import { HeadComponent } from './componentes/head/head.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +14,11 @@ import { HeadComponent } from './componentes/head/head.component';
     HeaderComponent,
     SeccionesComponent,
     FooterComponent,
-    HeadComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
