@@ -72,18 +72,18 @@ header li{
 
 header a{
   display:block;
-  color:rgba(105, 2, 33, 0.8);
+  color:rgba(66, 4, 48, 0.8);
 }
 
 header a:hover{
-  color:rgba(153, 4, 48, 0.8);
+  color:rgba(66, 4, 48, 0.8);
   text-decoration:none;
   background:rgb(253, 253, 253);
   border-radius:4px
 }
 
 header a:focus{
-  color:rgba(105, 2, 33, 0.8);
+  color:rgba(66, 4, 48, 0.8);
   text-decoration:none
 }
 
@@ -188,7 +188,7 @@ footer{
 }
 
 .social a:hover{
-  color:rgba(92, 3, 30, 0.8)
+  color:rgba(66, 4, 48, 0.8)
 }
 
 .btn-rounded-white{
@@ -207,7 +207,7 @@ footer{
 }
 
 .shadow{
-  box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(70, 2,22, 0.8)
+  box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(66, 4, 48, 0.8)
 }
 
 .shadow-large{
@@ -235,7 +235,7 @@ footer{
 }
 
 .background-alt{
-  background:#f2f2f5
+  background:#fff
 }
 
 #lead{
@@ -243,7 +243,6 @@ footer{
   height:100vh;
   min-height:500px;
   max-height:1080px;
-  background:url(../images/lead-bg.jpg);
   background-size:cover;
   padding:15px;
   overflow:hidden
@@ -262,7 +261,7 @@ footer{
 }
 
 #lead-content h1{
-  color:rgba(245, 234, 176, 0.8);
+  color:rgba(253, 251, 237, 0.8);
   font-weight:900;
   font-size:5em;
   text-transform:uppercase;
@@ -285,8 +284,16 @@ footer{
   right:0;
   bottom:0;
   left:0;
-  background:rgba(70, 2,22,0.8);
-  z-index:1
+  background:rgba(66, 4, 48, 0.8);
+  opacity: 100%;
+  z-index:1;
+  background-image: url("https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: 100%;
+  
+  
 }
 
 #lead-down{
@@ -307,7 +314,7 @@ footer{
   width:35px;
   height:35px;
   border-radius:50%;
-  border:3px solid #a0cfee;
+  border:3px solid #fff;
   text-align:center
 }
 
@@ -325,7 +332,7 @@ footer{
 }
 
 #about h2{
-  color:#dcd9d9
+  color:#a9b0b6
 }
 
 #about p{
@@ -340,36 +347,19 @@ footer{
 }
 
 #experience h2{
-  color:#adacac
+  color:#a9b0b6
 }
 
-#experience-timeline{
-  margin:30px auto 0 auto;
-  position:relative;
-  max-width:1000px
+#experience h3{
+color:#74808a
 }
 
-#experience-timeline:before{
-  position:absolute;
-  content:'';
-  top:0;
-  bottom:0;
-  left:303px;
-  right:auto;
-  height:100%;
-  width:3px;
-  background:#fff;
-  z-index:0
-}
+#experience h4{
+  color:#74808a
+  }
 
-#experience-timeline:after{
-  position:absolute;
-  content:'';
-  width:3px;
-  height:40px;
-  background:#fff;
-  
-  top:100%;left:303px
+.experience-date {
+  color: #a9b0b6;
 }
 
 .vtimeline-content{
@@ -384,7 +374,7 @@ footer{
 .vtimeline-content h3{
   font-size:1.5em;
   font-weight:300;
-  color:#dcd9d9;
+  color:#ffffff;
   display:inline-block;
   margin:0
 }
@@ -414,7 +404,7 @@ footer{
   color:#fff;
   width:50px;
   height:50px;
-  background:#;
+  background:#fff;
   border-radius:50%;
   float:left;
   z-index:99;
@@ -434,7 +424,7 @@ footer{
   left:0;
   top:10px;
   font-weight:300;
-  color:#dcd9d9
+  color:#74808a
 }
 
 #education{
@@ -444,7 +434,7 @@ footer{
 }
 
 #education h2{
-  color:#dcd9d9;
+  color:#a9b0b6;
   margin-bottom:50px
 }
 
@@ -453,14 +443,15 @@ footer{
   margin:0 auto 30px auto;
   padding:15px;
   border:1px solid #dcd9d9;
-  text-align:left
+  text-align:left;
+  color:#74808a
 }
 
 .education-block h3{
   font-weight:500;
   float:left;
   margin:0;
-  color:#dcd9d9
+  color:#c7c4c4
 }
 
 .education-block span{
@@ -469,7 +460,7 @@ footer{
 }
 
 .education-block h4{
-  color:#74808a;
+  color:#808181;
   clear:both;
   font-weight:500;
   margin:0 0 15px 0
@@ -482,7 +473,9 @@ footer{
 }
 
 .education-block ul{
-  padding:0 0 0 15px
+  padding:0 0 0 15px;
+  color:#74808a
+  
 }
 
 #projects{
@@ -492,12 +485,13 @@ footer{
 }
 
 #projects h2{
-  color:#dcd9d9;
-  margin-bottom:50px
+  color:#a9b0b6;
+  margin-bottom:70px
 }
 
 .project{
   position:relative;
+  display:block;
   max-width:900px;
   margin:0 auto 30px auto;
   overflow:hidden;
@@ -505,36 +499,36 @@ footer{
   border-radius:4px
 }
 
-.project-image{
-  float:left
-}
 
 .project-info{
   position:absolute;
   top:50%;
   transform:translateY(-50%);
   margin-left:300px;
-  padding:15px
+  padding: 30px
 }
 
 .project-info h3{
   font-size:1.5em;
   font-weight:300;
-  color:#dcd9d9;
+  color:#808181;
   margin:0 0 15px 0
 }
 
 .project-info p{
   color:#74808a;
-  margin:0 0 15px 0;
-  font-size:0.9em
+  margin:5 5 15px 5;
+  font-size:0.9em;
+  text-align: center;
+  overflow: hidden;
 }
 
 .no-image .project-info{
   position:relative;
   margin:0;
-  padding:30px 15px;
-  transform:none
+  padding:30px 30px;
+  transform:none;
+ 
 }
 
 #more-projects{
@@ -618,7 +612,7 @@ footer{
 
 #contact-form input:focus,#contact-form textarea:focus{
   outline:none;
-  background:#16527a
+  background:#404344
 }
 
 #contact-form textarea{
@@ -633,7 +627,7 @@ footer{
   border-radius:4px;
   padding:5px 10px;
   border:none;
-  color:#fff;
+  color:rgb(95, 89, 89);
   font-weight:700;
   box-shadow:0 1px 3px rgba(0,0,0,0.12),0 1px 2px rgba(0,0,0,0.24);
   transition:.5s ease all
