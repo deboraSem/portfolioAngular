@@ -1,3 +1,5 @@
+
+     
 body{
   font-family:'Lato', sans-serif;
   font-size:16px
@@ -61,7 +63,7 @@ header ul{
   background:rgba(255, 255, 255, 0.8);
   text-align:center;
   padding:10px;
-  margin:0;
+  margin: 2em;
   border-bottom-right-radius:4px;
   border-bottom-left-radius:4px
 }
@@ -71,8 +73,8 @@ header li{
 }
 
 header a{
-  display:block;
-  color:rgba(66, 4, 48, 0.8);
+  display:inline-block;
+  color:rgba(48, 45, 47, 0.8);
 }
 
 header a:hover{
@@ -250,14 +252,11 @@ footer{
 
 #lead-content{
   position:absolute;
-  z-index:10;top:50%;
+  z-index:10;
+  top:40%;
   left:50%;
   transform:translate(-50%, -50%);
   text-align:center
-}
-
-#lead-content h1,#lead-content h2{
-  margin:0
 }
 
 #lead-content h1{
@@ -266,14 +265,16 @@ footer{
   font-size:5em;
   text-transform:uppercase;
   letter-spacing:0.05em;
-  line-height:0.9em
+  line-height:0.9em;
+  margin-top:1em;
 }
 
 #lead-content h2{
   color:#ffffff;
   font-weight:500;
   font-size:2.25em;
-  margin-bottom:15px
+  margin-bottom:15px;
+  margin:0%
 }
 
 #lead-overlay{
@@ -284,16 +285,14 @@ footer{
   right:0;
   bottom:0;
   left:0;
-  background:rgba(66, 4, 48, 0.8);
-  opacity: 100%;
+  background:rgba(255, 255, 255, 0.8);
+  opacity: 90%;
   z-index:1;
   background-image: url("https://images.unsplash.com/photo-1608306448197-e83633f1261c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: 100%;
-  
-  
+  background-size: 100%; 
 }
 
 #lead-down{
@@ -314,8 +313,7 @@ footer{
   width:35px;
   height:35px;
   border-radius:50%;
-  border:3px solid #fff;
-  text-align:center
+  text-align: center;
 }
 
 #lead-down i{
@@ -485,7 +483,7 @@ color:#74808a
 }
 
 #projects h2{
-  color:#a9b0b6;
+  color:#191c1f;
   margin-bottom:70px
 }
 
@@ -499,17 +497,16 @@ color:#74808a
   border-radius:4px
 }
 .project-image{
+  display: none;
   position:relative;
-  margin-left:0;
-  padding: 30px
+  
 }
 
-
 .project-info{
-  position:absolute;
+  position:relative;
   top:50%;
   transform:translateY(-50%);
-  margin-left:300px;
+  margin-left:30px;
   padding: 30px
 }
 
@@ -525,7 +522,8 @@ color:#74808a
   margin:5 5 15px 5;
   font-size:0.9em;
   text-align: center;
-  overflow: visible;
+  overflow: auto;
+  content-visibility: visible;
 }
 
 .no-image .project-info{
@@ -533,7 +531,6 @@ color:#74808a
   margin:0;
   padding:30px 30px;
   transform:none;
- 
 }
 
 #more-projects{
@@ -593,8 +590,7 @@ color:#74808a
   border:none;
   margin-bottom:10px;
   background:#7a7676;
-  color:#404142
-;
+  color:#404142;
   transition:.5s ease all
 }
 
